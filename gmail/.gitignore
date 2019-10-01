@@ -1,0 +1,7 @@
+<<<<<<< HEAD
+/node_modules
+package.json
+=======
+package-lock.json
+/node_modules
+>>>>>>> 94158968a76292bab918be0dead6e0043d21ad7f
