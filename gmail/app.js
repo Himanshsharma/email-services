@@ -78,7 +78,10 @@ app.post('/', urlencodedParser, (req, res) => {
 
 })
 app.get('/user/dashboard',(req,res)=>{
-    res.render('inbox')
+ok.find({To:req.session.user.email},(err,doc)=>{
+    res.render("inbox",{mails:doc})
+
+})
 })
 app.get('/user/dashboard/mail',(req,res)=>{
     res.render('mail')

@@ -1,1 +1,7 @@
 <a href="/user/dashboard/mail">compose mail</a>
+<% for(i=0;i<mails.length;i++){ %>
+    from 
+    <%=mails[i].from %>
+    mail:
+    <%=mails[i].message %>
+<% } %>
