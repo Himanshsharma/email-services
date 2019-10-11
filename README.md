@@ -18,7 +18,7 @@ npm install nodemon
 
 About project:-
 This is basic architetcure of sending mails. This is acheived using database Mongodb.
-Any user can signup and send send mail to all other users which are already signed in.
+Any user first signup and then login to  send mail to all other users which are already signed in.
 Any user can login in to send mails and check inbox.
 
 
