@@ -1,8 +1,9 @@
 <div style="width:100%;height:400px;background-color: blueviolet;"><a href="/user/dashboard/mail">compose mail</a></div>
-
+<ul>
 <% for(i=0;i<mails.length;i++){ %>
-    from 
+    <li>from 
     <%=mails[i].from %>
     mail:
     <%=mails[i].message %>
+    </li>
 <% } %>
