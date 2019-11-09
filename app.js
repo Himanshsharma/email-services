@@ -98,9 +98,14 @@ app.post('/user/dashboard/mail',urlencodedParser,(req,res)=>{
             return
         }
     })
-        res.render('email')
+        res.render('inbox')
     
 })
+app.get('/user/logout', (req, res) => {
+    req.session.destroy()
+    res.redirect('/')
+})
+
 app.listen(3000, () => {
     console.log("Server is running")
 })
